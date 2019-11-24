@@ -6,10 +6,9 @@ set softtabstop=3
 set expandtab
 set showcmd
 set hlsearch
-" Ignore case search
-set ignorecase
-" Highlight dynamically as patter is typed
-set incsearch
+set ignorecase    "Ignore case during search
+set incsearch     " Dynamically highlight as pattern is typed
+set ruler
 
 " Steve Configuration
 set foldmethod=indent

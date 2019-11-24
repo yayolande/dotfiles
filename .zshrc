@@ -78,6 +78,8 @@ source $ZSH/oh-my-zsh.sh
 # Steveen configuration
 cd cs_project/
 alias lichess='brave-browser lichess.org'
+chpwd() ls
+# cdls () {cd "$@" && ls; } # It is a function to perform 'ls' after a successfull 'cd'
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
