@@ -1,8 +1,15 @@
+syntax on
 set number
 set autoindent
 set shiftwidth=3
 set softtabstop=3
 set expandtab
+set showcmd
+set hlsearch
+" Ignore case search
+set ignorecase
+" Highlight dynamically as patter is typed
+set incsearch
 
 " Steve Configuration
 set foldmethod=indent
