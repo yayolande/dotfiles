@@ -17,16 +17,20 @@ set foldlevelstart=2
 " Steve mapping
 let mapleader = ","
 nnoremap <leader>sv :source $MYVIMRC<CR>
-nnoremap <leader><CR> O<Esc>
-nnoremap <leader>pt oSystem.out.print ("");<Esc>F";a
-inoremap <leader>pt <Esc>oSystem.out.print ("");<Esc>F";a
-nnoremap <leader>java oimport java.util.Scanner;<CR>import java.text.DecimalFormat;<CR><CR>
+nnoremap <leader>pt aSystem.out.print ();<Esc>F(a
+nnoremap <leader>ptln aSystem.out.println ();<Esc>F(a
+inoremap <leader>pt System.out.print ();<Esc>F(a
+inoremap <leader>pn System.out.println ();<Esc>F(a
+nnoremap <leader>java aimport java.util.Scanner;<CR>import java.text.DecimalFormat;<CR><CR>
    \public class <C-r>%<Esc>diws {<CR><Tab>public static void main (String[] args) {<CR>}<CR><BS>}<Esc>kO
    \<Tab>Scanner kboard = new Scanner (System.in);<CR>
 
 nmap <leader><leader><CR> Os<Esc>x
-noremap <CR> os<Esc>x
 inoremap <leader><leader><CR> <Esc>O
+inoremap <leader><CR> <Esc>O
+nnoremap <leader><CR> O<Esc>
+inoremap <leader><Tab> <Esc>o
+nnoremap <leader><Tab> o<Esc>
 
 "set relativenumber
 
